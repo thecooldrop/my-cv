@@ -17,6 +17,7 @@
 \usepackage{fancyhdr}
 \usepackage[german]{babel}
 \usepackage{tabularx}
+\usepackage{svg}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -59,6 +60,13 @@
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSingleLine}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2
 	\end{tabular*}\vspace{-7pt}
 }
 
@@ -202,6 +210,27 @@ Open-Source-Enthusiast und Fan von allem Cloud-Native.
 			\textbf{DevOps}{: Grafana, Prometheus, Kubernetes, Helm, Kustomize, Jib, Kaniko, Jenkins, Gitlab CI, Shell Scripting, Terraform, Serverless Framework, DaggerCI, Github Actions}
 	}}
 \end{itemize}
+
+\section{Open Source Beiträge}
+\resumeSubHeadingListStart
+	\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/spring-projects/spring-boot/pulls/thecooldrop}{Spring Boot}}{}{}{}
+		\resumeItemListStart[label=\includesvg{merged}]
+			\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44187}{Document all the available Testcontainers integrations \#44187}}
+			\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44500}{Remove support for URLConnectionSender \#44500}}
+			\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44499}{Add support for OpenTelemetry's service.namespace \#44499}}
+		\resumeItemListEnd
+	\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/argoproj/argo-cd/pulls/thecooldrop}{ArgoCD}}{}{}{}
+		\resumeItemListStart[label=\includesvg{merged}]
+			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/21093}{chore: Improve the documentation regarding the selection of Application on by Sync Windows (\#20971) \#21093}}
+			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/19000}{chore: Clarify the meaning of secret exfiltration via ApplicationSet (issue \#18560) \#19000}}
+			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/18990}{fix: tree output with app selector permission denied. \#18990}}
+			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/18860}{fix: Fix issue in starting telepresence for remote debugging (Closes \#18859) \#18860}}
+		\resumeItemListEnd
+	\resumeSubheadingSingleLine{\includesvg{hyperlink} Keycloak}{}{}{}
+		\resumeItemListStart[label=\includesvg{merged}]
+		\resumeItem{\href{https://github.com/keycloak/keycloak/pull/25021}{Replace static text with reference to translation in Applications page \#24527 \#25021}}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 \end{document}
 %-------------------------------------------
