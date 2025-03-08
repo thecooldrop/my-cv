@@ -1,0 +1,247 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%\usepackage[default]{opensans}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{fontawesome5}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING----------
+	% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+		%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+		% \end{tabular*}
+	
+	\begin{center}
+		\textbf{\Huge \scshape Vanio Begic} \\ \vspace{2pt} 
+		Vogesenstr. 25, 76287 Rheinstetten $\cdot$ \small +49 176 244 15137 \\ \vspace{2pt}
+		\faEnvelope \ \href{mailto:vanio.begic123@gmail.com.com}{\underline{vanio.begic123@gmail.com}} $|$ 
+		\faLinkedin \ \href{https://linkedin.com/in/vaniobegic}{\underline{linkedin.com/in/vaniobegic}} $|$
+		\faGithub \ \href{https://github.com/thecooldrop}{\underline{github.com/thecooldrop}}
+	\end{center}
+	
+	\rule[5pt]{\textwidth}{2pt}
+	
+	Software engineer specialized in development and management of Java backend application developed to
+	run in the containerized cloud environments. Experienced in DevOps methodology of working with proven
+	track-record in automation of integration and deployment tasks. Open-source enthusiast and fan of all
+	things cloud-native.
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Karlsruher Universität für Technologie}{Karlsruhe, Germany}
+	{Bachelor of Electrical Engineering and Information Techonlogy}{Oct. 2016 -- Nov 2019}
+	\resumeSubheading
+	{Karlsruher Universität für Technologie}{Karlsruhe, Germany}
+	{Feststellungsprüfung}{Aug. 2015 -- Aug 2016}
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Senior Software Engineer}{Oct 2024 -- Present}{Capgemini}{Karlsruhe, Germany}
+	\resumeItemListStart
+		\resumeItem{Member of cross-functional team focusing on DevOps topics in context of new and challenging customer projects.}
+		\resumeItem{Evangelist for establishment of Innersource within Capgemini.}
+	\resumeItemListEnd
+	\resumeSubheading
+	{Lead Software Engineer}{Apr 2022 -- Oct 2024}
+	{Capgemini}{Karlsruhe, Germany}
+	\resumeItemListStart
+	\resumeItem{Member of cross-functional team with remit to establish, stabilize and form new engagements, with focus
+		on shaping architecture and team interactions to avoid known delivery anti-patterns in project-oriented
+		way of delivering software for large enterprise customers}
+	\resumeItemListEnd
+	
+	% -----------Multiple Positions Heading-----------
+	%    \resumeSubSubheading
+	%     {Software Engineer I}{Oct 2014 - Sep 2016}
+	%     \resumeItemListStart
+	%        \resumeItem{Apache Beam}
+	%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+	%     \resumeItemListEnd
+	%    \resumeSubHeadingListEnd
+	%-------------------------------------------
+	
+	\resumeSubheading{Software Engineer}{Jan 2020 -- Apr 2022 }{Capgemini}{Karlsruhe, Germany}
+	\resumeItemListStart
+		\resumeItem{Migration of a legacy Java enterprise backend application from monolith-integrated service running in
+		mainframe into a cloud-ready 12-factor application running in AWS EKS}
+	\resumeItem{Decoupling of a project from legacy waterfall development methodology and migration into cloud-ready
+		DevOps methodology}
+	\resumeItem{Develop and manage infrastructure via Terraform, Jenkins pipelines and configurations as code, as well as
+		declarative description of deployments to different environments as part of the efforts to migrate towards
+		GitOps style deployments and management of operations}
+	\resumeItem{Leading the adoption of cloud technologies in order to leverage the power of Kubernetes and integrate
+		state-of-the-art tools into the projects}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Intern - Autonomous Robotic Systems}{Oct. 2018 -- Nov. 2019}
+	{SEW Eurodrive}{Bruchsal, Germany}
+	\resumeItemListStart
+	\resumeItem{Implemented novel adaptive algorithms for tracking of extended targets with variable extent based on
+		radar measurements}
+	\resumeItem{Mathematically derived a variation of GM-PHD algorithm which incorporates variable extent of targets and
+		assumes uniform distribution of newly observed target across the state space}
+	\resumeItem{Collaborated on evaluation of synergies between SLAM ( Simultaneous Localization and Mapping ) and
+		multiple target tracking algorithms for indoor automated robotic platforms}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------PROJECTS-----------
+	% \section{Projects}
+	% \resumeSubHeadingListStart
+	% \resumeProjectHeading
+	% {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+	% \resumeItemListStart
+	% \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+	% \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+	% \resumeItem{Visualized GitHub data to show collaboration}
+	% \resumeItem{Used Celery and Redis for asynchronous tasks}
+	% \resumeItemListEnd
+	% \resumeProjectHeading
+	% {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, Git}}{May 2018 -- May 2020}
+	% \resumeItemListStart
+	% \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+	% \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+	% \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+	% \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+	% \resumeItemListEnd
+	% \resumeSubHeadingListEnd
+	
+
+	\section{Certifications}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small {
+			\item Dec 2024 \quad \textbf{Certified  Kubernetes Administrator}, Linux Foundation
+		}
+	\end{itemize}
+	
+	%
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{
+			\item{
+				\textbf{Software Engineering}{: Software Architecture on IT-system level in cloud environments ( focus on AWS ),
+					Application level architecture ( focus on SOLID and hexagonal ), Test Driven Development, Migration of
+					legacy applications to cloud, Consumer-Driven Contract Testing, Behavior Driven Development} \\
+				\textbf{Frameworks}{: Spring, Mockito, JUnit, Hibernate, Liquibase, Flyway, Cucumber, Pact, Angular, React, Jest, Cypress, } \\
+				\textbf{Developer Tools}{: Git, Docker, AWS, VS Code, IntelliJ, Eclipse} \\
+				\textbf{DevOps}{: Grafana, Prometheus, Kubernetes, Helm, Kustomize, Jib, Kaniko, Jenkins, Gitlab CI, Shell Scripting, Terraform, Serverless Framework, DaggerCI, Github Actions}
+		}}
+	\end{itemize}
+	
+	
+	%-------------------------------------------
+\end{document}
