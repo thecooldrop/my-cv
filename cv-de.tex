@@ -1,8 +1,8 @@
 %-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Lebenslauf in Latex
+% Autor: Jake Gutierrez
+% Basierend auf: https://github.com/sb2nov/resume
+% Lizenz: MIT
 %------------------------
 \documentclass[a4paper,12pt]{article}
 
@@ -21,12 +21,12 @@
 \input{glyphtounicode}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{} % alle Kopf- und Fußzeilenfelder löschen
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Ränder anpassen
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -39,16 +39,16 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Formatierung der Abschnitte
 \titleformat{\section}{
 	\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Sicherstellen, dass die generierte PDF maschinenlesbar/ATS-analysierbar ist
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands
+% Benutzerdefinierte Befehle
 \newcommand{\resumeItem}[1]{
 	\item\small{
 		{#1 \vspace{-2pt}}
@@ -96,141 +96,152 @@
 \usepackage{fontawesome5}
 
 \begin{document}
+	
+	\begin{center}
+		\textbf{\Huge \scshape Vanio Begic} \\ \vspace{2pt} 
+		Vogesenstr. 25, 76287 Rheinstetten $\cdot$ \small +49 176 244 15137 \\ \vspace{2pt}
+		\faEnvelope \ \href{mailto:vanio.begic123@gmail.com.com}{\underline{vanio.begic123@gmail.com}} $|$ 
+		\faLinkedin \ \href{https://linkedin.com/in/vaniobegic}{\underline{linkedin.com/in/vaniobegic}} $|$
+		\faGithub \ \href{https://github.com/thecooldrop}{\underline{github.com/thecooldrop}}
+	\end{center}
+	
+	\rule[5pt]{\textwidth}{2pt}
+	
+	Software-Ingenieur spezialisiert auf Entwicklung und Management von Java-Backend-Anwendungen für den Betrieb 
+	in containerisierten Cloud-Umgebungen. Erfahren in DevOps-Methodik mit nachgewiesenen Erfolgen 
+	bei der Automatisierung von Integrations- und Bereitstellungsaufgaben. Open-Source-Enthusiast und Fan aller 
+	Cloud-nativen Technologien.
+	
+	%-----------BILDUNG-----------
+	\section{Bildung}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Karlsruher Institut für Technologie}{Karlsruhe, Deutschland}
+	{Bachelor in Elektrotechnik und Informationstechnik}{Okt. 2016 -- Nov. 2019}
+	\resumeSubheading
+	{Karlsruher Institut für Technologie}{Karlsruhe, Deutschland}
+	{Feststellungsprüfung}{Aug. 2015 -- Aug. 2016}
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------BERUFSERFAHRUNG-----------
+	\section{Berufserfahrung}
+	\resumeSubHeadingListStart
+		\resumeSubheading
+		{Senior Software Ingenieur (Stufe C)}{Okt. 2024 -- Heute}{Capgemini}{Karlsruhe, Deutschland}
+		\resumeItemListStart
+			\resumeItem{Mitglied eines funktionsübergreifenden Teams mit Fokus auf DevOps-Themen im Kontext neuer und anspruchsvoller Kundenprojekte.}
+			\resumeItem{Evangelist für die Etablierung von Innersource innerhalb von Capgemini.}
+			\resumeItem{Entwicklung eines hausinternen agentischen Frameworks für die automatisierte Transformation von Anwendungen von Legacy- zu modernen Technologien.}
+			\resumeItem{Anwendung des agentischen Frameworks im Kundenkontext für die Migration einer Anwendungsoberfläche von Struts 1 zu React.}
+			\resumeItem{Entwicklung einer E-Commerce-Plattform für den B2B-Verkauf von Immobiliendaten im Bankensektor.}
+			\resumeItem{\textbf{Eingesetzte Fähigkeiten: }{Java, Cypress, Cucumber, JUnit 5, Spring-Ökosystem, Gradle, Portainer, Docker/Container, Python, CrewAI, Prompt Engineering}}
+		\resumeItemListEnd
+		\resumeSubSubheading{People Development Lead}{März 2025 -- Heute}
+			\resumeItemListStart
+				\resumeItem{Formale Führung und Management eines Teams von Software-Ingenieuren als Teil der Capgemini-Matrixorganisation.}
+			\resumeItemListEnd
 
-\begin{center}
-	\textbf{\Huge \scshape Vanio Begic} \\ \vspace{2pt} 
-	Vogesenstr. 25, 76287 Rheinstetten $\cdot$ \small +49 176 244 15137 \\ \vspace{2pt}
-	\faEnvelope \ \href{mailto:vanio.begic123@gmail.com.com}{\underline{vanio.begic123@gmail.com}} $|$ 
-	\faLinkedin \ \href{https://linkedin.com/in/vaniobegic}{\underline{linkedin.com/in/vaniobegic}} $|$
-	\faGithub \ \href{https://github.com/thecooldrop}{\underline{github.com/thecooldrop}}
-\end{center}
-
-\rule[5pt]{\textwidth}{2pt}
-Senior Software Ingenieur spezialisiert in Entwicklung und Wartung von Java Backend Anwendungen für Betrieb als Container in Cloud-Umgebungen.
-Erfahren mit DevOps Methodologie mit demonstrierbarem Erfolg in Automatisierung von Integrations- und Auslieferungsprozessen.
-Open-Source-Enthusiast und Fan von allem Cloud-Native.
-
-%-----------EDUCATION-----------
-\section{Bildungsweg}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Karlsruher Institut für Technologie}{Karlsruhe, Deutschland}
-{Bachelor of Elektrotechnik und Informationstechnik}{Oktober 2016 -- November 2019}
-\resumeSubheading
-{Studienkolleg am Karlsruher Institut für Technologie}{Karlsruhe, Deutschland}
-{Feststellungsprüfung}{August 2015 -- August 2016}
-\resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------
-\section{Berufserfahrung}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Senior Software Ingenieur (Stufe C)}{Oktober 2024 -- laufend}{Capgemini}{Karlsruhe, Deutschland}
-\resumeItemListStart
-	\resumeItem{Mitglied eines funktionsübergreifenden Teams mit Fokus auf DevOps-Themen im Kontext neuer und anspruchsvoller Kundenprojekte.}
-	\resumeItem{Community Evangelist für die Etablierung von Innersource innerhalb von Capgemini.}
-\resumeItemListEnd
-\resumeSubheading
-{Lead Software Ingenieur (Stufe B)}{April 2022 -- Oktober 2024}
-{Capgemini}{Karlsruhe, Deutschland}
-\resumeItemListStart
-\resumeItem{Mitglied eines funktionsübergreifenden Teams mit dem Auftrag, neue Engagements zu etablieren, zu stabilisieren und zu formen,
-		mit Schwerpunkt auf der Gestaltung der Architektur und der Teaminteraktionen, um bekannte Lieferantimuster in der projektorientierten
-		Softwarebereitstellung für große Unternehmenskunden zu vermeiden.}
-\resumeItemListEnd
-
-	% -----------Multiple Positions Heading-----------
-	% \resumeSubSubheading
-	% {Software Engineer I}{Oct 2014 - Sep 2016}
-	% \resumeItemListStart
-	% 	\resumeItem{Apache Beam}
-	% 		{Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-	% \resumeItemListEnd
-	%-------------------------------------------
-
-\resumeSubheading{Software Ingenieur (Stufe A)}{Januar 2020 -- April 2022 }{Capgemini}{Karlsruhe, Deutschland}
-\resumeItemListStart
-	\resumeItem{Migration von veralteten Enterprise-Java Backend Anwendungen von einer monolithischen Architektur zu einer cloud-fähigen 12-Faktor-Anwendung, die in AWS EKS läuft.}
-	\resumeItem{Entkopplung eines Projekts von der Legacy-Wasserfall-Entwicklungsmethodik und Migration zu einer cloud-fähigen DevOps-Methodik.}
-	\resumeItem{Entwicklung und Verwaltung von Infrastruktur über Terraform, Jenkins-Pipelines und Konfigurationen als Code, sowie deklarative Beschreibung von Deployments in verschiedenen Umgebungen als Teil der Bemühungen, zu GitOps-artigen Deployments und Betriebsmanagement zu migrieren.}
-	\resumeItem{Leitung der Einführung von Cloud-Technologien, um die Leistungsfähigkeit von Kubernetes zu nutzen und modernste Tools in die Projekte zu integrieren.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Praktikant - Autonome Robotersysteme}{Okt. 2018 -- Nov. 2019}
-{SEW Eurodrive}{Bruchsal, Deutschland}
-\resumeItemListStart
-\resumeItem{Implementierung neuartiger adaptiver Algorithmen zur Verfolgung ausgedehnter Ziele mit variabler Ausdehnung basierend auf Radarmessungen.}
-\resumeItem{Mathematische Herleitung einer Variation des GM-PHD-Algorithmus, die variable Zielausdehnung berücksichtigt und eine gleichmäßige Verteilung neu beobachteter Ziele über den Zustandsraum annimmt.}
-\resumeItem{Mitarbeit bei der Bewertung von Synergien zwischen SLAM (Simultaneous Localization and Mapping) und Algorithmen zur Verfolgung mehrerer Ziele für automatisierte Roboterplattformen in Innenräumen.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-	%-----------PROJECTS-----------
-	% \section{Projects}
+		\resumeSubheading
+		{Lead Software Ingenieur (Stufe B)}{Apr. 2022 -- Okt. 2024}
+		{Capgemini}{Karlsruhe, Deutschland}
+			\resumeItemListStart
+				\resumeItem{Mitglied eines funktionsübergreifenden Teams mit dem Auftrag, neue Engagements zu etablieren, zu stabilisieren und zu formen, mit Fokus auf die Gestaltung der Architektur und Teaminteraktionen, um bekannte Anti-Patterns bei der projektorientierten Softwarebereitstellung für große Unternehmenskunden zu vermeiden.}
+				\resumeItem{Entwicklung einer Microservice-Landschaft, die über RabbitMQ kommunizieren und mit zustandsbehafteter Verarbeitung von Daten agieren, um Verbraucherverträge mit Vereinbarungen von Anbietern digitaler Dienste abzugleichen.}
+				\resumeItem{Integrations-, Contract- und Behaviour-Driven-Tests einer Microservice-Landschaft mit Pact, Cucumber und JUnit5.}
+				\resumeItem{Entwicklung einer Frontend-Anwendung in Angular für die Beantragung von Zugriff auf komplexe Datenverarbeitung unter den Einschränkungen der DSGVO im öffentlichen Gesundheitssektor.}
+				\resumeItem{Entwicklung eines Backends mit integrierter komplexer Zustandsmaschine zur Verwaltung des Lebenszyklus von Anfragen für den Zugriff auf Daten im öffentlichen Gesundheitssektor.}
+				\resumeItem{\textbf{Eingesetzte Fähigkeiten: }{Java, Typescript, Pact, JUnit5, Cypress, Cucumber, Jest, Hibernate, Spring-Ökosystem, Docker/Container, Kubernetes, Helm, Kustomize, ArgoCD, Rancher, Gitlab CI, Bash, RabbitMQ, REST APIs}}
+				\resumeItem{\textbf{Eingesetzte Methoden: }{Trunk-Based Development, Test-Driven Development, Kanban, Scrum, Value-Stream Mapping, WIP-Begrenzung, Pair Programming}}
+			\resumeItemListEnd
+	
+		\resumeSubheading{Software Ingenieur (Stufe A)}{Jan. 2020 -- Apr. 2022 }{Capgemini}{Karlsruhe, Deutschland}
+			\resumeItemListStart
+				\resumeItem{Migration einer Legacy-Java-Enterprise-Backend-Anwendung von einem monolithisch integrierten Dienst auf einem Mainframe zu einer cloud-fähigen 12-Faktor-Anwendung, die in AWS EKS läuft.}
+				\resumeItem{Entkopplung eines Projekts von der Legacy-Wasserfall-Entwicklungsmethodik und Übergang zur DevOps-Methodik.}
+				\resumeItem{Entwicklung und Verwaltung der Cloud-Infrastruktur über Terraform, Jenkins-Pipelines und Konfigurationen-als-Code, sowie deklarative Beschreibung von Deployments in verschiedenen Umgebungen als Teil der Bemühungen, zu GitOps-artigen Deployments und Betriebsmanagement zu migrieren.}
+				\resumeItem{Leitung der Einführung von Cloud-Technologien, um die Leistungsfähigkeit von Kubernetes zu nutzen und moderne Tools in die Projekte zu integrieren.}
+				\resumeItem{\textbf{Eingesetzte Fähigkeiten: }{Java, Spring Batch, Java EE, Maven, Mockito, JUnit5, Jenkins, Kubernetes, Terraform, AWS, Docker, Helm, IntelliJ}}
+			\resumeItemListEnd
+	
+	\resumeSubheading
+	{Praktikant - Autonome Robotersysteme}{Okt. 2018 -- Nov. 2019}
+	{SEW Eurodrive}{Bruchsal, Deutschland}
+	\resumeItemListStart
+	\resumeItem{Implementierung neuartiger adaptiver Algorithmen zur Verfolgung ausgedehnter Ziele mit variabler Ausdehnung basierend auf Radarmessungen.}
+	\resumeItem{Mathematische Herleitung einer Variation des GM-PHD-Algorithmus, die variable Zielausdehnung berücksichtigt und eine gleichmäßige Verteilung neu beobachteter Ziele über den Zustandsraum annimmt.}
+	\resumeItem{Mitarbeit bei der Bewertung von Synergien zwischen SLAM (Simultaneous Localization and Mapping) und Algorithmen zur Verfolgung mehrerer Ziele für automatisierte Roboterplattformen in Innenräumen.}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------PROJEKTE-----------
+	% \section{Projekte}
 	% \resumeSubHeadingListStart
 	% \resumeProjectHeading
-	% {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+	% {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{Juni 2020 -- Heute}
 	% \resumeItemListStart
-	% \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-	% \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-	% \resumeItem{Visualized GitHub data to show collaboration}
-	% \resumeItem{Used Celery and Redis for asynchronous tasks}
+	% \resumeItem{Entwicklung einer Full-Stack-Webanwendung mit Flask für eine REST-API und React als Frontend}
+	% \resumeItem{Implementierung von GitHub OAuth, um Daten aus den Repositories der Benutzer zu erhalten}
+	% \resumeItem{Visualisierung von GitHub-Daten zur Darstellung der Zusammenarbeit}
+	% \resumeItem{Nutzung von Celery und Redis für asynchrone Aufgaben}
 	% \resumeItemListEnd
 	% \resumeProjectHeading
-	% {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, Git}}{May 2018 -- May 2020}
+	% {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, Git}}{Mai 2018 -- Mai 2020}
 	% \resumeItemListStart
-	% \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-	% \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-	% \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-	% \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+	% \resumeItem{Entwicklung eines Minecraft-Server-Plugins zur Unterhaltung von Kindern in der Freizeit für einen früheren Job}
+	% \resumeItem{Veröffentlichung des Plugins auf Websites mit über 2.000 Downloads und einer durchschnittlichen Bewertung von 4,5/5 Sternen}
+	% \resumeItem{Implementierung von Continuous Delivery mit TravisCI zum Erstellen des Plugins bei neuen Releases}
+	% \resumeItem{Zusammenarbeit mit Minecraft-Server-Administratoren zur Vorschlagung von Funktionen und zum Einholen von Feedback zum Plugin}
 	% \resumeItemListEnd
 	% \resumeSubHeadingListEnd
 	
 
-\section{Zertifizierungen}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small {
-		\item Dez. 2024 \quad \textbf{Certified Kubernetes Administrator}, Linux Foundation
-	}
-\end{itemize}
-
-%-----------TECHNICAL SKILLS-----------
-\section{Fähigkeiten}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{
-		\item{
-			\textbf{Sprachen}{: Deutsch (C1), Englisch (fließend), Bosnisch/Kroatisch/Serbisch (Muttersprache)}
-			\textbf{Software Engineering}{: Softwarearchitektur auf IT-Systemebene in Cloud-Umgebungen (Fokus auf AWS),
-				Anwendungsarchitektur (Fokus auf SOLID und hexagonal), Test-Driven Development, Migration von
-				Legacy-Anwendungen in die Cloud, Consumer-Driven Contract Testing, Behavior Driven Development} \\
-			\textbf{Frameworks}{: Spring, Mockito, JUnit, Hibernate, Liquibase, Flyway, Cucumber, Pact, Angular, React, Jest, Cypress} \\
-			\textbf{Entwicklertools}{: Git, Docker, AWS, VS Code, IntelliJ, Eclipse} \\
-			\textbf{DevOps}{: Grafana, Prometheus, Kubernetes, Helm, Kustomize, Jib, Kaniko, Jenkins, Gitlab CI, Shell Scripting, Terraform, Serverless Framework, DaggerCI, Github Actions}
-	}}
-\end{itemize}
-
-\section{Open Source Beiträge}
-\resumeSubHeadingListStart
-	\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/spring-projects/spring-boot/pulls/thecooldrop}{Spring Boot}}{}{}{}
-		\resumeItemListStart[label=\includesvg{merged}]
-			\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44187}{Document all the available Testcontainers integrations \#44187}}
-			\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44500}{Remove support for URLConnectionSender \#44500}}
-			\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44499}{Add support for OpenTelemetry's service.namespace \#44499}}
-		\resumeItemListEnd
-	\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/argoproj/argo-cd/pulls/thecooldrop}{ArgoCD}}{}{}{}
-		\resumeItemListStart[label=\includesvg{merged}]
-			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/21093}{chore: Improve the documentation regarding the selection of Application on by Sync Windows (\#20971) \#21093}}
-			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/19000}{chore: Clarify the meaning of secret exfiltration via ApplicationSet (issue \#18560) \#19000}}
-			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/18990}{fix: tree output with app selector permission denied. \#18990}}
-			\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/18860}{fix: Fix issue in starting telepresence for remote debugging (Closes \#18859) \#18860}}
-		\resumeItemListEnd
-	\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/keycloak/keycloak/pulls/thecooldrop}{Keycloak}}{}{}{}
-		\resumeItemListStart[label=\includesvg{merged}]
-		\resumeItem{\href{https://github.com/keycloak/keycloak/pull/25021}{Replace static text with reference to translation in Applications page \#24527 \#25021}}
-		\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\end{document}
-%-------------------------------------------
+	\section{Zertifizierungen}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small {
+			\item Dez. 2024 \quad \textbf{Certified Kubernetes Administrator}, Linux Foundation
+		}
+	\end{itemize}
+	
+	%
+	%-----------FÄHIGKEITEN-----------
+	\section{Fähigkeiten}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{
+			\item{
+				\textbf{Sprachen}{: Deutsch (C1), Englisch (fließend), Bosnisch/Kroatisch/Serbisch (Muttersprache)} \\
+				\textbf{Software-Engineering}{: Softwarearchitektur auf IT-Systemebene in Cloud-Umgebungen (Schwerpunkt AWS),
+					Anwendungsarchitektur (Schwerpunkt SOLID und hexagonal), Test-Driven Development, Migration von
+					Legacy-Anwendungen in die Cloud, Consumer-Driven Contract Testing, Behavior Driven Development} \\
+					\textbf{Frameworks}{: Spring, Mockito, JUnit, Hibernate, Liquibase, Flyway, Cucumber, Pact, Angular, React, Jest, Cypress} \\
+					\textbf{Entwicklertools}{: Git, Docker, AWS, VS Code, IntelliJ, Eclipse} \\
+					\textbf{DevOps}{: Grafana, Prometheus, Kubernetes, Helm, Kustomize, Jib, Kaniko, Jenkins, Gitlab CI, Shell Scripting, Terraform, Serverless Framework, DaggerCI, Github Actions}
+			}}
+		\end{itemize}
+	
+		\section{Open-Source-Beiträge}
+			\resumeSubHeadingListStart
+				\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/spring-projects/spring-boot/pulls/thecooldrop}{Spring Boot}}{}{}{}
+					\resumeItemListStart[label=\includesvg{merged}]
+						\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44187}{Dokumentation aller verfügbaren Testcontainers-Integrationen \#44187}}
+						\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44500}{Entfernung der Unterstützung für URLConnectionSender \#44500}}
+						\resumeItem{\href{https://github.com/spring-projects/spring-boot/pull/44499}{Hinzufügung der Unterstützung für OpenTelemetry's service.namespace \#44499}}
+					\resumeItemListEnd
+				\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/argoproj/argo-cd/pulls/thecooldrop}{ArgoCD}}{}{}{}
+					\resumeItemListStart[label=\includesvg{merged}]
+						\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/21093}{chore: Verbesserung der Dokumentation bezüglich der Auswahl von Anwendungen durch Sync Windows (\#20971) \#21093}}
+						\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/19000}{chore: Klärung der Bedeutung von Secret-Exfiltration über ApplicationSet (Issue \#18560) \#19000}}
+						\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/18990}{fix: Baumausgabe mit App-Selektor-Zugriffsverweigerung \#18990}}
+						\resumeItem{\href{https://github.com/argoproj/argo-cd/pull/18860}{fix: Behebung eines Problems beim Starten von Telepresence für Remote-Debugging (Schließt \#18859) \#18860}}
+					\resumeItemListEnd
+				\resumeSubheadingSingleLine{\includesvg{hyperlink} \href{https://github.com/keycloak/keycloak/pulls/thecooldrop}{Keycloak}}{}{}{}
+					\resumeItemListStart[label=\includesvg{merged}]
+					\resumeItem{\href{https://github.com/keycloak/keycloak/pull/25021}{Ersetzung von statischem Text durch Referenz zur Übersetzung in der Anwendungsseite \#24527 \#25021}}
+					\resumeItemListEnd
+			\resumeSubHeadingListEnd
+		
+		%-------------------------------------------
+	\end{document}
+	
